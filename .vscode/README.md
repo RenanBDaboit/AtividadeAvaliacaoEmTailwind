@@ -22,4 +22,4 @@ O projeto possui apenas a interface inicial de um site genérico de cursos onlin
 
 ## Preview
 
-[Preview]<img height="200" src="./images/Preview.png" />
+<img height="500" src="./images/Preview.png" />
