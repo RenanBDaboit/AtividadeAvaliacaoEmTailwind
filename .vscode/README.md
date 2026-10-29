@@ -15,3 +15,11 @@ O projeto possui apenas a interface inicial de um site genérico de cursos onlin
 
 ## Funcionalidades
 
+- Visualização de cursos genéricos
+- Entrada na barra de pesquisa com retorno padrão
+- Entrada de dados como nome e email com retorno padrão
+- Mudança de cor de alguns botões ao clicar
+
+## Preview
+
+[Preview](./images/Preview.png)
