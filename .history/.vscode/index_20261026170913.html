@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #6B5CF6;
+            --color-background-primary: #ffffff;
+            --color-background-secondary: #f1f0ff;
+
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #333333;
+
+            --color-cta: #95D354;
+
+            --font-primary: 'Red Hat Display', sans-serif;
+            --font-secondary: 'Red Hat Text', sans-serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="*:m-0 *:p-0 *:box-border">
+    <header class="flex flex-row justify-between items-center g-3 bg-primary pt-[clamp(1rem, 0.6479rem + 1.5023vw, 2rem)] pb-[clamp(3rem, 4.3521rem + -1.5023vw, 4rem)] px-3.5">
+        <h2 class="font-primary text-[clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem)] text-text-primary font-extrabold">EDU</h2>
+            <div class="flex flex-row w-full items-center max-w-142.5 bg-background-primary rounded-full pl-6">
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem] hidden">Search courses</p>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Search</p>
+                <img class="p-3.75 bg-cta ml-auto rounded-full" src="images/magnifier.png" alt="Magnifier icon">
+            </div>
+            <span class="rounded-full p-3 font-primary font-semibold text-base text-text-primary leading-[1.75rem] bg-background-primary text-[#dd514c] material-symbols-outlined">menu</span>
+    </header>
+
+    <main class="flex flex-col">
+        <section class="flex flex-row justify-center items-start bg-primary pt-0 pr-3.5 pb-24 pl-3.5">
+            <article class="bg-[url('/images/Hero-photo.png')] bg-center bg-cover bg-no-repeat flex flex-col justify-between rounded-[3.75rem] max-w-242.5 h-164 pt-[clamp(2rem, 1.2958rem + 3.0047vw, 4rem)] pb-[clamp(2rem, 0.9437rem + 4.507vw, 5rem)] px-[clamp(1.875rem, 0.6866rem + 5.0704vw, 5.25rem)]">
+                <div class="flex flex-row items-center g-8 pb-[clamp(3rem, 1.1074rem + 8.0751vw, 8.375rem)]">
+                    <span class="rounded-full py-0 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem] bg-[#50c4ee]">SCIENCE</span>
+                    <div>
+                        <img src="images/Facebook.png" alt="Facebook image">
+                        <img src="images/Twitter.png" alt="Twitter image">
+                        <img src="images/Instagram.png" alt="Instagram image">
+                    </div>
+                </div>
+                <div class="flex flex-col g-7">
+                    <h1 class="font-primary text-[clamp(3.5rem, 2.9084rem + 2.5243vw, 5.9375rem)] text-text-primary leading-[4rem]">Scientific Methods and Research</h1>
+                    <p class="font-secondary text-[1.375rem] text-text-primary leading-[2rem] font-light">Julian Gruber</p>
+                </div>
+                <div class="flex flex-row justify-between items-end pt-clamp(0.5rem, 0.838rem + -0.3756vw, 0.75rem)">
+                    <span class="rounded-full py-3 px-8 font-secondary font-extrabold text-lg text-text-primary leading-[1.75rem] bg-cta">$199</span>
+                    <img src="images/Play.png" alt="Play course image">
+                </div>
+            </article>
+        </section>
+
+        <section class="flex flex-col py-[clamp(5rem, 3.2394rem + 7.5117vw, 10rem)] px-[clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem)] g-[clamp(3.5rem, 1.8715rem + 6.9484vw, 8.125rem)] bg-background-secondary">
+            <img src="images/About-us-girl.png" alt="Girl image of about us section">
+            <div class="about-us-information">
+                <h3 class="font-primary text-base text-text-secondary font-extrabold">ABOUT</h3>
+                <h2 class="font-primary text-[clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem)] text-text-secondary font-extrabold">We Are Experts in Elearning</h2>
+                <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">Distant orb has power</h5>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">
+                    What looked like a small patch of purple grass, above five feet square,
+                    was moving across the sand in their direction. When it came near enough he
+                    perceived.
+                </p>
+                <button class="border-none py-3 px-6 bg-cta rounded-[24rem] w-42.5 font-secondary text-lg font-extrabold text-text-primary explore-CTA">Explore</button>
+            </div>
+        </section>
+
+        <section class="popular-courses-section">
+            <div class="popular-courses-section-title">
+                <h3 class="font-primary text-base text-text-secondary font-extrabold">COURSES</h3>
+                <h2 class="font-primary text-[clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem)] text-text-secondary font-extrabold">Popular Subjects</h2>
+            </div>
+            <div class="courses-filter">
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]"><span class="rounded-full py-1 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem]">All</span></p>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Science</p>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Design</p>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Food</p>
+                <div class="desktop-filters">
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Tech</p>
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Music</p>
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Medicine</p>
+                </div>
+            </div>
+            <div class="popular-courses">
+                <article class="course">
+                    <div class="course-quantum-computers-image">
+                        <span class="rounded-full py-1 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem]">SCIENCE</span>
+                    </div>
+                    <div class="course-information">
+                        <h4 class="font-primary text-2xl font-extrabold text-text-secondary">Quantum Computers</h4>
+                        <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">Ivan Cornejo</h5>
+                        <div class="lessons-and-price">
+                            <p class="font-secondary text-lg text-[#999999] leading-[2rem]">10 Lessons</p>
+                            <span class="rounded-full py-1 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem]">$299</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="course">
+                    <div class="course-mechanics-image">
+                        <span class="rounded-full py-1 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem]">DESIGN</span>
+                    </div>
+                    <div class="course-information">
+                        <h4 class="font-primary text-2xl font-extrabold text-text-secondary">Mechanics</h4>
+                        <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">Chikanso Chima</h5>
+                        <div class="lessons-and-price">
+                            <p class="font-secondary text-lg text-[#999999] leading-[2rem]">10 Lessons</p>
+                            <span class="rounded-full py-1 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem]">$299</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="course">
+                    <div class="course-neuroscience-image">
+                        <span class="rounded-full py-1 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem]">FOOD</span>
+                    </div>
+                    <div class="course-information">
+                        <h4 class="font-primary text-2xl font-extrabold text-text-secondary">Neuroscience</h4>
+                        <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">Leonardo Oliveira</h5>
+                        <div class="lessons-and-price">
+                            <p class="font-secondary text-lg text-[#999999] leading-[2rem]">10 Lessons</p>
+                            <span class="rounded-full py-1 px-3.25 font-primary font-semibold text-base text-text-primary leading-[1.75rem]">$299</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="load-more-button">Load more</a>
+        </section>
+
+        <section class="features-section">
+            <div class="features-information">
+                <div class="features-section-title">
+                    <h3 class="font-primary text-base text-text-secondary font-extrabold">FEATURES</h3>
+                    <h2 class="font-primary text-[clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem)] text-text-secondary font-extrabold">Premium Courses</h2>
+                </div>
+                <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">Lifts the horizon</h5>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">
+                    What looked like a small patch of purple grass, above five feet square,
+                    was moving across the sand in their direction.
+                </p>
+                <div class="feature-atributes">
+                    <article class="atribute">
+                        <img src="images/Backpack.png" alt="Free support atribute image">
+                        <div class="atribute-information">
+                            <h4 class="font-primary text-2xl font-extrabold text-text-secondary">Free Support</h4>
+                            <p class="font-secondary text-lg text-[#999999] leading-[2rem]">
+                                Truly it was a great journey, and in it I met with many, whom to
+                                know.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="atribute">
+                        <img src="images/Test.png" alt="Free support atribute image">
+                        <div class="atribute-information">
+                            <h4 class="font-primary text-2xl font-extrabold text-text-secondary">Big Bonuses</h4>
+                            <p class="font-secondary text-lg text-[#999999] leading-[2rem]">
+                                Truly it was a great journey, and in it I met with many, whom to
+                                know.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <img src="images/Features-girl.png" alt="Girl image of feature section">
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-section-title">
+                <h3 class="font-primary text-base text-text-secondary font-extrabold">GALLERY</h3>
+                <h2 class="font-primary text-[clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem)] text-text-secondary font-extrabold">Photo & Video</h2>
+            </div>
+            <div class="gallery-photos-and-video">
+                <div class="gallery-video">
+                    <img src="images/Play.png" alt="Play button">
+                </div>
+                <div class="gallery-photos">
+                    <img class="gallery-photo" src="images/Photo-top-left-gallery.png" alt="Gallery photo">
+                    <img class="gallery-photo" src="images/Photo-top-right-gallery.png" alt="Gallery photo">
+                    <img class="gallery-photo" src="images/Photo-bottom-left-gallery.png" alt="Gallery photo">
+                    <img class="gallery-photo" src="images/Photo-bottom-right-gallery.png" alt="Gallery photo">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us-section">
+            <div class="contact-us-information">
+                <div class="contact-us-section-title">
+                    <h3 class="font-primary text-base text-text-secondary font-extrabold">CONTACT US</h3>
+                    <h2 class="font-primary text-[clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem)] text-text-secondary font-extrabold">Register Now</h2>
+                </div>
+                <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">Sky took on a wonderful</h5>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">
+                    What looked like a small patch of purple grass, above five feet square, was
+                    moving across the sand in their direction. When it came near enough he perceived.
+                </p>
+            </div>
+            <div class="contact-us-form">
+                <div class="input">
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Your Name</p>
+                </div>
+                <div class="input">
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Your Email</p>
+                </div>
+                <div class="input">
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Subject</p>
+                    <img src="images/Triangle.png" alt="Combo box triangle">
+                </div>
+                <div class="message-input">
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Message</p>
+                </div>
+                <button class="border-none py-3 px-6 bg-cta rounded-[24rem] w-42.5 font-secondary text-lg font-extrabold text-text-primary submit-button">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="company-brief">
+            <div class="contact-footer">
+                <h2 class="font-primary text-[clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem)] text-text-secondary font-extrabold">EDU</h2>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">
+                    Car seemed to float in the middle of an immense dark
+                    sphere, whose upper.
+                </p>
+                <div class="social-media-footer">
+                    <img src="images/Facebook.png" alt="Facebook image">
+                    <img src="images/Twitter.png" alt="Twitter image">
+                    <img src="images/Instagram.png" alt="Instagram image">
+                </div>
+            </div>
+            <div class="popular-courses-footer">
+                <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">POPULAR COURSES</h5>
+                <P class="font-secondary text-lg text-[#999999] leading-[2rem]">Digital Ecosystem Infrastructure</P>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Nutrition, Exercise and Sports</p>
+                <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Leadership and Influence</p>
+            </div>
+            <div class="subscribe-newsletter-footer">
+                <h5 class="font-secondary text-[1.375rem] font-normal text-text-secondary">NEWSLETTER</h5>
+                <div class="input">
+                    <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Your email</p>
+                </div>
+                <button class="border-none py-3 px-6 bg-cta rounded-[24rem] w-42.5 font-secondary text-lg font-extrabold text-text-primary subscribe-button">Subscribe</button>
+            </div>
+        </section>
+
+        <section class="company-copyright">
+            <p class="font-secondary text-lg text-[#999999] leading-[2rem]">Copyright © 2019 Education. All Rights Reserved.</p>
+            <div class="terms-and-policy">
+                <a href="#">Terms of Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

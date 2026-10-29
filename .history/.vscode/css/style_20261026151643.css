@@ -1,0 +1,732 @@
+:root {
+    --header-hero-form-footer-background-color: #6B5CF6;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #f1f0ff;
+
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #333333;
+
+    --CTA-color: #95D354;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: clamp(3.5rem, 2.9084rem + 2.5243vw, 5.9375rem);
+}
+
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: clamp(2.5rem, 1.9084rem + 2.5243vw, 4.9375rem);
+    color: var(--secondary-text-color);
+    font-weight: 800;
+}
+
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    font-weight: 800;
+
+}
+
+h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary-text-color);
+}
+
+h5 {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+}
+
+p {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 1.125rem;
+    color: #999999;
+    line-height: 2rem;
+}
+
+button {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--CTA-color);
+    border-radius: 24rem;
+    width: 10.625rem;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--primary-text-color);
+}
+
+span {
+    border-radius: 200rem;
+    padding: 0.25rem 0.8125rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    line-height: 1.75rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--header-hero-form-footer-background-color);
+    padding: clamp(1rem, 0.6479rem + 1.5023vw, 2rem) 0.875rem clamp(3rem, 4.3521rem + -1.5023vw, 4rem) 0.875rem;
+
+    h2 {
+        color: var(--primary-text-color);
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        max-width: 35.625rem;
+        background-color: var(--primary-background-color);
+        border-radius: 200rem;
+        padding-left: 1.5rem;
+
+        .mobile-search-text {
+            color: #999999;
+            font-size: 1.125rem;
+        }
+
+        .desktop-search-text {
+            display: none;
+        }
+
+        img {
+            padding: 0.9375rem;
+            background-color: var(--CTA-color);
+            margin-left: auto;
+            border-radius: 200rem;
+        }
+    }
+
+    span {
+        padding: 0.75rem;
+        background-color: var(--primary-background-color);
+        color: #dd514c;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    .featured-courses-hero {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: var(--header-hero-form-footer-background-color);
+        padding: 0rem 0.875rem 6rem 0.875rem;
+
+        .featured-courses {
+            background-image: url(../images/Hero-photo.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 3.75rem;
+            max-width: 60.625rem;
+            height: 41rem;
+            padding: clamp(2rem, 1.2958rem + 3.0047vw, 4rem) clamp(1.875rem, 0.6866rem + 5.0704vw, 5.25rem) clamp(2rem, 0.9437rem + 4.507vw, 5rem) clamp(1.875rem, 0.6866rem + 5.0704vw, 5.25rem);
+
+            .course-header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2rem;
+                padding-bottom: clamp(3rem, 1.1074rem + 8.0751vw, 8.375rem);
+
+                span {
+                    background-color: #50c4ee;
+                    padding: 0 0.8125rem;
+                }
+            }
+
+            .course-title {
+                display: flex;
+                flex-direction: column;
+                gap: 1.75rem;
+
+                h1 {
+                    color: var(--primary-text-color);
+                    line-height: 4rem;
+                }
+
+                p {
+                    color: var(--primary-text-color);
+                    font-size: 1.375rem;
+                    font-weight: 300;
+                }
+            }
+
+
+            .course-price-and-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding-top: clamp(0.5rem, 0.838rem + -0.3756vw, 0.75rem);
+
+                span {
+                    padding: 0.75rem 2rem;
+                    background-color: var(--CTA-color);
+                    font-family: 'Red Hat Text', sans-serif;
+                    font-weight: 800;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+
+    .about-us-section {
+        display: flex;
+        flex-direction: column;
+        padding: clamp(5rem, 3.2394rem + 7.5117vw, 10rem) clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem);
+        gap: clamp(3.5rem, 1.8715rem + 6.9484vw, 8.125rem);
+        background-color: var(--secondary-background-color);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .about-us-information {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h2 {
+                padding-bottom: 1rem;
+            }
+
+            h5 {
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-weight: 400;
+                padding-bottom: 0.5rem;
+            }
+
+            button {
+                display: block;
+                padding: 0.75rem 3.125rem;
+                background-color: #e6e5f3;
+                color: #6B5CF6;
+                border-radius: 200rem;
+                width: 10.625rem;
+            }
+        }
+    }
+
+    .popular-courses-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4.625rem clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem) 5rem clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem);
+        gap: clamp(3rem, 2.7799rem + 0.939vw, 3.625rem);
+
+        .popular-courses-section-title {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .courses-filter {
+            display: flex;
+            flex-direction: row;
+            line-height: 2rem;
+            padding: 0.5rem 2.375rem 0.5rem 0rem;
+            background-color: var(--secondary-background-color);
+            border-radius: 200rem;
+            gap: 2.125rem;
+
+            span {
+                padding: 0.75rem 1.6875rem;
+                background-color: #e6e5f3;
+                color: #6B5CF6;
+                font-weight: 800;
+            }
+
+            .desktop-filters {
+                display: none;
+            }
+        }
+
+        .popular-courses {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+
+            .course {
+                display: flex;
+                flex-direction: column;
+                gap: 1.4375rem;
+                width: 100%;
+                background-color: var(--secondary-background-color);
+                border-radius: 1.25rem;
+
+                .course-quantum-computers-image {
+                    background-image: url(../images/Quantum-computers.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 19rem;
+                    border-radius: 1.25rem;
+                    padding: 2.25rem 2rem;
+
+                    span {
+                        background-color: #50c4ee;
+                    }
+                }
+
+                .course-mechanics-image {
+                    background-image: url(../images/Mechanics.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 19rem;
+                    border-radius: 1.25rem;
+                    padding: 2.25rem 2rem;
+
+                    span {
+                        background-color: #ee71c7;
+                    }
+                }
+
+                .course-neuroscience-image {
+                    background-image: url(../images/Neuroscience.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 19rem;
+                    border-radius: 1.25rem;
+                    padding: 2.25rem 2rem;
+
+                    span {
+                        background-color: #9177f5;
+                    }
+                }
+
+                .course-information {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 2rem 2rem 2rem;
+                    gap: 0.375rem;
+
+                    h5 {
+                        font-size: 1.125rem;
+                    }
+
+                    .lessons-and-price {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        span {
+                            font-family: 'Red Hat Text', sans-serif;
+                            font-size: 1.125rem;
+                            font-weight: 800;
+                            padding: 0.75rem 1.375rem;
+                            background-color: var(--CTA-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        .load-more-button {
+            text-decoration: none;
+            font-family: 'Red Hat Text', sans-serif;
+            font-weight: 800;
+            font-size: 1.125rem;
+            color: #6B5CF6;
+            padding: 0.75rem 2.34375rem;
+            background-color: var(--secondary-background-color);
+            border-radius: 200rem;
+        }
+    }
+
+    .features-section {
+        display: flex;
+        flex-direction: column;
+        padding: clamp(4.6875rem, 2.8169rem + 7.9812vw, 10rem) clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem) clamp(4.6875rem, 2.8169rem + 7.9812vw, 9.375rem) clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem);
+        background-color: var(--secondary-background-color);
+        gap: clamp(3rem, 2.6039rem + 1.6901vw, 4.125rem);
+
+        .features-information {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .features-section-title {
+                display: flex;
+                flex-direction: column;
+                gap: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+            }
+        }
+
+        .feature-atributes {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(1rem, 0.5158rem + 2.0657vw, 2.375rem);
+
+            .atribute {
+                display: flex;
+                flex-direction: row;
+                gap: 1.75rem;
+
+                img {
+                    max-height: 6rem;
+                    max-width: 6rem;
+                }
+
+                .atribute-information {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.25rem;
+                }
+            }
+        }
+    }
+
+    .gallery-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4.625rem clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem) clamp(4.25rem, 4.757rem + -0.5634vw, 4.625rem) clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem);
+        gap: 3.375rem;
+
+        .gallery-section-title {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .gallery-photos-and-video {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(1.3125rem, 1.1144rem + 0.8451vw, 1.875rem);
+
+            .gallery-video {
+                background-image: url(../images/Video-gallery.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: calc(50% - 3.5rem) calc(50% - 3.5rem);
+                border-radius: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+            }
+
+            .gallery-photos {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                gap: 1.125rem;
+
+                .gallery-photo {
+                    width: calc(50% - 0.625rem);
+                }
+            }
+        }
+    }
+
+    .contact-us-section {
+        display: flex;
+        flex-direction: column;
+        padding: clamp(2.625rem, 0.2042rem + 10.3286vw, 9.5rem) clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem) clamp(5rem, 3.2394rem + 7.5117vw, 10rem) clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem);
+        gap: clamp(1.75rem, -0.4947rem + 9.5775vw, 8.125rem);
+        background-color: var(--secondary-background-color);
+
+        .contact-us-information {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .contact-us-section-title {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .contact-us-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 2rem;
+            background-color: var(--header-hero-form-footer-background-color);
+            border-radius: 2.5rem;
+            padding: 5rem 3rem 3rem 3rem;
+
+            .input {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem 1.5rem;
+                background-color: var(--primary-background-color);
+                border-radius: 1.5rem;
+                width: 100%;
+
+                img {
+                    height: 0.375rem;
+                }
+            }
+
+            .message-input {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0.5rem 1.5rem 4.5rem 1.5rem;
+                background-color: var(--primary-background-color);
+                border-radius: 1.5rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 4.625rem clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem) clamp(2.375rem, 3.7271rem + -1.5023vw, 3.375rem) clamp(0.875rem, -1.7879rem + 11.3615vw, 8.4375rem);
+    background-color: var(--header-hero-form-footer-background-color);
+
+    .company-brief {
+        display: flex;
+        flex-direction: column;
+        gap: 3.625rem;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid #7a6cf7;
+
+        .contact-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h2 {
+                color: var(--primary-text-color);
+            }
+
+            p {
+                font-weight: 100;
+                color: #b5aefb;
+            }
+        }
+
+        .popular-courses-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h5 {
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 2rem;
+                color: var(--primary-text-color);
+            }
+
+            p {
+                font-weight: 300;
+                color: var(--primary-text-color);
+            }
+        }
+
+        .subscribe-newsletter-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+
+            h5 {
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 2rem;
+                color: var(--primary-text-color);
+                padding-bottom: 0.25rem;
+            }
+
+            .input {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem 1.5rem;
+                background-color: var(--primary-background-color);
+                border-radius: 1.5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    .company-copyright {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 3.5rem;
+
+        p {
+            padding: 0rem 3rem;
+            color: #b5aefb;
+            font-weight: 300;
+        }
+
+        .terms-and-policy {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0rem clamp(1.125rem, 1.5211rem + -1.6901vw, 1.125rem);
+
+            a {
+                text-decoration: none;
+                font-family: 'Red Hat Text', sans-serif;
+                font-weight: 300;
+                font-size: 1.125rem;
+                color: var(--primary-text-color);
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    header {
+        justify-content: space-around;
+    }
+
+    main {
+        .featured-courses-hero {
+            .featured-courses {
+                justify-content: space-between;
+
+                .course-header {
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .about-us-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .popular-courses-section {
+            .courses-filter {
+                .desktop-filters {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2.125rem;
+                }
+            }
+
+            .popular-courses {
+                flex-direction: row;
+            }
+
+            .load-more-button {
+                margin-top: 2.375rem;
+            }
+        }
+
+        .features-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .gallery-section {
+            .gallery-photos-and-video {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .gallery-photos {
+                    gap: 2rem;
+
+                    .gallery-photo {
+                        width: calc(50% - 1rem);
+                    }
+                }
+            }
+        }
+
+        .contact-us-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .contact-us-information {
+                padding-top: 3.625rem;
+                flex: 1;
+
+                h2 {
+                    font-size: 3.5rem;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        .company-brief {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .company-copyright {
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+                padding: 0;
+            }
+
+            .terms-and-policy {
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .features-section {
+        .features-section-title {
+            h2 {
+                white-space: nowrap;
+            }
+        }
+    }
+}

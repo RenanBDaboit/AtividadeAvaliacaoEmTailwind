@@ -1,0 +1,17 @@
+# Avaliação prática 1 em Tailwind
+
+Atividade realizada na UC de programação front-end que consistia na alteração da forma utilizada para o design do projeto de CSS para Tailwind.
+
+Além disso foi feito também 5 funcionalidades usando DOM com JavaScript.
+
+O projeto possui apenas a interface inicial de um site genérico de cursos online
+
+## Tecnologias
+
+- HTML
+- CSS
+- Tailwind CSS
+- DOM
+
+## Funcionalidades
+
